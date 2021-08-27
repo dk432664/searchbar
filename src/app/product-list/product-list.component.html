@@ -1,0 +1,16 @@
+
+<div class="card mb-4" *ngFor="let shopping of shoppingItems|async|filter:searchText" >
+  <!-- [shopping]="shoppingItems" -->
+<!-- <div class="card mb-4" *ngFor="let product of products | filter:searchText" [product]="products"> -->
+    <div class="card-body">
+
+        <h5 class="card-title">{{ shopping.name }}</h5>
+        <p class="card-text">{{ shopping.specification }}</p>
+        <p class="lead">{{shopping.price.toLocaleString('en-IN', {style: 'currency', currency: 'INR'})}}</p>
+        <!-- <button class="btn btn-primary   me-3" (click)="addProductToCart(product)">Add to Cart</button> -->
+        <button class="btn btn-primary" type="button" [routerLink]="['/detail', shopping.id]">
+        Details</button>
+    </div>
+</div>
+<!-- </div> -->
+<!-- (click)="LoadDesc()"  -->

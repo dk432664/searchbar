@@ -1,0 +1,24 @@
+<div class="container py-4 my-4 ">
+  <h1 class="h2 text-center mb-5">Search Listed Mobiles</h1>
+  </div>
+<div class="container">
+  <div class="row">
+    <div class="col-9">
+      <app-search-bar (searchValueChanged)="updateFilter($event)"></app-search-bar>
+
+      <!-- <app-product-list [searchText]="searchText"  [products]="productList"> -->
+      <app-product-list [searchText]="searchText" ></app-product-list>
+
+
+      <!-- (productAdded)="addProductToCart($event)" -->
+
+
+    </div>
+
+    <div class="col-3">
+    <shopping-cart [products]="cartProductList" ></shopping-cart>
+    <!-- (productRemoved)="removeProduct($event)" -->
+    </div>
+    </div>
+    </div>
+

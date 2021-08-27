@@ -1,0 +1,21 @@
+body{
+ background-color: cyan;
+}
+*{
+    background-color:bisque;
+}
+mat-card {
+    margin: 5% auto;
+    width: 50%;
+  }
+
+.google-login-btn {
+    background-image: url('src/assets/google-logo.png');
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: 10%;
+    padding-left: 10%;
+}
+
+
+

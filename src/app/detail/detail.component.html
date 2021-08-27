@@ -1,0 +1,37 @@
+<body>
+<div class="container mt-4">
+  <div class="row pt-4 ps-4">
+    <div class="col-9">
+      <div class="card mb-4">
+        <div class="card-body" *ngIf="product">
+
+          <h5 class="card-title">{{ product.name}}</h5>
+          <p class="card-text">{{ product.specification }}</p>
+          <p class="card-text">{{ product.description }}</p>
+          <p class="lead">{{product.price.toLocaleString('en-IN', {style: 'currency', currency: 'INR'})}}</p>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row ps-4">
+    <div class="col-3">
+      <button class="btn btn-primary b2" type="button" (click)="LoadDesc()">Home</button>
+    </div>
+  </div>
+</div>
+</body>
+<!-- </div>
+  </div> -->
+<!-- <div class="card mb-4" 
+
+*ngFor="let product of products " 
+[product]="products">
+    <div class="card-body">
+       
+      <h5 class="card-title">{{ product.name }}</h5>
+      <p class="card-text">{{ product.specification }}</p>
+      <p class="lead">{{product.price.toLocaleString('en-IN', {style: 'currency', currency: 'INR'})}}</p>
+      <p class="card-text">{{ product.description }}</p> -->
+<!-- <button class="btn btn-primary b2" routerLink='/detail'>Details</button> -->
