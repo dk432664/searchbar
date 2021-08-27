@@ -51,8 +51,10 @@ const appRoutes:Routes=[
    ReactiveFormsModule,
    RouterModule.forRoot(appRoutes),
    SocialLoginModule,
-   StoreModule.forRoot({shopping:ShoppingReducer}),
-   StoreModule.forRoot({cart:CartReducer})
+   StoreModule.forRoot({
+     shopping: ShoppingReducer,
+     cart: CartReducer
+    }),
   ],
   providers: [
     {
